@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Tailwinditter</title>
+  <link rel="stylesheet" href="tailwind.css">
+
+</head>
+
+<body class="subpixel-antialiased text-gray-900">
+
+  <div class=" w-full max-w-screen-xl mx-auto px-6">
+
+    <!--Sidenav-->
+    <div class="fixed inset-0 pt-12 pr-4 h-full w-24 border-r border-gray-300 -mb-16">
+
+      <nav class="absolute flex px-6 pt-2">
+
+        <div class="relative mb-8">
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  d="M13 20v-5h-2v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.59l-.3.3a1 1 0 1 1-1.4-1.42l9-9a1 1 0 0 1 1.4 0l9 9a1 1 0 0 1-1.4 1.42l-.3-.3V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm5 0v-9.59l-6-6-6 6V20h3v-5c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v5h3z" />
+              </svg><span class="sm:hidden">Home</span></button>
+
+            <a class="sm:hidden" href="#!">Home</a>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" /></svg><span class="sm:hidden">Explore</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M15 19a3 3 0 0 1-6 0H4a1 1 0 0 1 0-2h1v-6a7 7 0 0 1 4.02-6.34 3 3 0 0 1 5.96 0A7 7 0 0 1 19 11v6h1a1 1 0 0 1 0 2h-5zm-4 0a1 1 0 0 0 2 0h-2zm0-12.9A5 5 0 0 0 7 11v6h10v-6a5 5 0 0 0-4-4.9V5a1 1 0 0 0-2 0v1.1z" /></svg><span
+                class="sm:hidden">Notifications</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z" /></svg><span class="sm:hidden">Messages</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M12 18.62l-6.55 3.27A1 1 0 0 1 4 21V4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v17a1 1 0 0 1-1.45.9L12 18.61zM18 4H6v15.38l5.55-2.77a1 1 0 0 1 .9 0L18 19.38V4z" /></svg><span class="sm:hidden">Bookmarks</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  d="M6 2h9a1 1 0 0 1 .7.3l4 4a1 1 0 0 1 .3.7v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2zm9 2.41V7h2.59L15 4.41zM18 9h-3a2 2 0 0 1-2-2V4H6v16h12V9zm-2 7a1 1 0 0 1-1 1H9a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1zm0-4a1 1 0 0 1-1 1H9a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1zm-5-4a1 1 0 0 1-1 1H9a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1z" />
+              </svg><span class="sm:hidden">Lists</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><img class="rounded-full border-2 border-blue-500 w-8 h-8" src="./img/user.jpg" alt=""><span class="sm:hidden">Profile</span></button>
+
+          </div>
+
+          <div class="flex justify-center pb-8">
+
+            <button class="hover:bg-blue-200 px-2 py-2 rounded-full"><svg class="fill-current text-gray-700 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M4 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" /></svg><span
+                class="sm:hidden">More</span></a>
+
+          </div>
+
+          <div class="flex justify-center rounded-full">
+
+            <button class="bg-blue-500 px-2 py-2 rounded-full hover:bg-blue-600"><span class=""><svg class="h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M11 9.27V0l6 11-4 6H7l-4-6L9 0v9.27a2 2 0 1 0 2 0zM6 18h8v2H6v-2z" /></svg></span></button>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+    <!--Content Wrapper-->
+    <div class="float-right container w-10/12 ">
+
+
+      <!--Name and Tweet Count -->
+      <header class="py-1">
+
+        <div class=" pl-2 flex items-center container">
+
+          <div class="">
+
+            <button class="rounded-full hover:bg-blue-200 px-2 py-2"><svg class="h-4 w-4 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M3.828 9l6.071-6.071-1.414-1.414L0 10l.707.707 7.778 7.778 1.414-1.414L3.828 11H20V9H3.828z" /></svg></button>
+
+          </div>
+
+          <div class="pl-8 leading-tight">
+
+            <h2 class="font-extrabold text-xl">Justin Reidy</h2>
+
+            <p class="font-hairline text-sm text-gray-700 ">460 Tweets</p>
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <!--Banner Image-->
+      <div class="flex">
+
+        <img src="./img/banner.jpg" alt="">
+
+      </div>
+
+      <!--User Information-->
+      <header>
+
+
+        <div class="flex justify-between">
+
+          <!--User Image-->
+          <div class="pl-2 -mt-20">
+
+            <img class="rounded-full h-32 w-32 border-2 border-white" src="./img/user.jpg" alt="">
+
+          </div>
+
+          <div class="pr-3 pt-2">
+
+            <button class="px-3 py-1 border border-blue-500 rounded-r-full rounded-l-full hover:bg-blue-100">
+
+              <span class="text-blue-500 font-bold">Edit profile</span>
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <!--User Name and Tag-->
+        <div class="pl-2 leading-tight">
+
+          <h1 class="font-extrabold text-xl">Justin Reidy</h1>
+          <p class="text-gray-600">@ReidyJustin</p>
+
+        </div>
+
+        <!--Other Information-->
+        <div class="container">
+
+          <!--Description-->
+          <div class="pl-2 pt-1 text-md">
+
+            Web Developer in the making, Coffee and Hockey lover, Colorado Native
+
+          </div>
+
+          <!--Location, Birthday, and Join Date-->
+
+          <div class="pl-2 text-gray-600 text-base font-thin">
+
+            <div class="flex">
+
+              <div class="flex items-center">
+
+                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" /></svg>
+                <p class="pl-1">Village of Four Seasons, MO</p>
+
+              </div>
+
+              <div class="pl-3 flex items-center">
+
+                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm2-2.25a8 8 0 0 0 4-2.46V9a2 2 0 0 1-2-2V3.07a7.95 7.95 0 0 0-3-1V3a2 2 0 0 1-2 2v1a2 2 0 0 1-2 2v2h3a2 2 0 0 1 2 2v5.75zm-4 0V15a2 2 0 0 1-2-2v-1h-.5A1.5 1.5 0 0 1 4 10.5V8H2.25A8.01 8.01 0 0 0 8 17.75z" />
+                </svg>
+                <p class="pl-1">Born January 18, 1999</p>
+
+              </div>
+
+            </div>
+
+            <div class="flex items-center">
+
+              <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z" /></svg>
+              <p class="pl-1">Joined October 2014</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--Following and Followers-->
+        <div class="pl-2 container flex text-gray-600">
+
+          <div class="">
+
+            <a class="hover:underline" href=""><span class="pr-1 text-gray-900 font-bold">78</span>Following</a>
+
+          </div>
+
+          <div class="pl-8">
+
+            <a class="hover:underline" href=""><span class="pr-1 text-gray-900 font-bold">60</span>Followers</a>
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <!--Tweet, Tweets & Replies, ect.-->
+      <div class="flex justify-around mt-6 border-b border-gray-300">
+
+        <div class="hover:bg-blue-100 border-b border-gray-300 text-gray-900 hover:text-blue-600 focus:border-blue-600 mx-auto">
+
+          <button class="pb-3 pt-2 px-6  font-bold focus:outline-none focus:text-blue-600 ">Tweets</button>
+
+        </div>
+
+        <div class="hover:bg-blue-100 border-b border-gray-300 text-gray-900 hover:text-blue-600 mx-auto">
+
+          <button class="pb-3  font-bold pt-2 px-6">Tweets & replies</button>
+
+        </div>
+
+        <div class="hover:bg-blue-100 border-b border-gray-300 text-gray-900 hover:text-blue-500 mx-auto">
+
+          <button class="pb-3 pt-2 px-6 font-bold"><span class="">Media</span></button>
+
+        </div>
+
+        <div class="hover:bg-blue-100 border-b border-gray-300 text-gray-900 hover:text-blue-500 mx-auto">
+
+          <button class="pb-3 pt-2 px-6 font-bold">Likes</button>
+
+        </div>
+
+      </div>
+
+      <!--Tweet Content-->
+      <div id="tweetContent" class="mt-4 text-gray-900 container">
+
+        <div class="flex">
+
+          <div class="flex">
+
+            <img class="rounded-full border border-black h-12 w-12" src="./img/user.jpg" alt="">
+
+          </div>
+
+          <div class="pl-2 flex justify-between">
+
+            <div class="flex hover:underline">
+
+              <a href="#!" class="font-bold ">Justin Reidy</a>
+              <p class="pl-1 font-hairline hover:no-underline text-gray-600">@ReidyJustin</p>
+
+            </div>
+
+
+            <div class="flex">
+
+              <p class="pl-1 text-gray-600"> &middot </p>
+
+              <a href="#!" class="pl-1 text-gray-600 hover:underline">Jul 29</a>
+
+            </div>
+
+          </div>
+
+          <div class="flex">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z" /></svg>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <p>I'm honestly surprised with how easy <a>@tailwindcss</a> is to learn, and while the documentation isnt the best I've ever seen it isnt far off</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
